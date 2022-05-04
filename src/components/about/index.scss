@@ -1,0 +1,68 @@
+$tomato: #ff5f5f;
+$black: #2c2c2c;
+
+
+@mixin animation($delay){
+  animation: backInLeft 1.2s $delay;
+  animation-fill-mode: backwards;
+}
+
+.about {
+  color: $black;
+  margin-left: 6.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+
+  position: absolute;
+  margin-top: 8rem;
+  margin-bottom: -15rem;
+  width: 35%;  
+
+  .h1 {
+    font-size: 1.9rem;
+
+    &::before {
+      content: '<h1>';
+      font-size: 65%;
+      color: $tomato;
+      font-family: 'La Belle Aurore';
+      position: absolute;
+      left: -3.2rem;
+      top: 2.8rem;
+
+      @include animation(2.9s);
+
+    }
+
+    &::after {
+      content: '</h1>';
+      font-size: 65%;
+      color: $tomato;
+      font-family: 'La Belle Aurore';
+      position: absolute;
+      left: 18.8rem;
+      top: 4.8rem;
+
+      @include animation(2.8s);
+
+    }
+  }
+
+  .p {
+    position: absolute;
+    margin-top: -1rem;
+
+    @include animation(2.4s);
+
+  }
+}
+
+
+.tagcloud{
+  position: absolute;
+  left: 65rem;
+  top: 14rem;
+  animation: fadeIn 1s 2.8s;
+  animation-fill-mode: backwards;
+  height: 6rem;
+  width: 6rem;
+}

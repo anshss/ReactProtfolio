@@ -1,0 +1,98 @@
+@import "../layout/button.scss";
+
+$tomato: #ff5f5f;
+$black: #2c2c2c;
+$hover: #83ffe6;
+
+
+@mixin animation($delay){
+  animation: backInLeft 1s $delay;
+  animation-fill-mode: backwards;
+}
+
+
+.home {
+  color: $black;
+  margin-left: 6.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+
+  position: absolute;
+  margin-top: 8rem;
+  margin-bottom: -15rem;
+
+  .h1 {
+    font-size: 1.9rem;
+
+    h1 {
+      animation: headShake 1s 1s;
+      animation-fill-mode: forwards;
+    }
+
+    &::before {
+      content: '<h1>';
+      font-size: 65%;
+      color: $tomato;
+      font-family: 'La Belle Aurore';
+      position: absolute;
+      left: -3rem;
+      top: 2.8rem;
+      
+      @include animation(4.5s);
+
+    }
+
+    &::after {
+      content: '</h1>';
+      display: inline;
+      font-size: 65%;
+      color: $tomato;
+      font-family: 'La Belle Aurore';
+      position: absolute;
+      left: 27.9rem;
+      top: 13.4rem;
+
+      @include animation(4.4s);
+
+    }
+  }
+
+  .h2 {
+    margin-top: -0.8rem;
+    color: #4d4d4e;
+
+    @include animation(4s);
+
+  }
+  .btndiv {
+    margin-top: 2rem;
+    float: left;
+
+    @include animation(4s);
+
+  }
+}
+
+.pulse {
+  font-size: 1.5rem !important;
+  color: $tomato;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid $tomato;
+  padding: 0.5rem;
+
+  &:hover {
+    color: white;
+    background-color: $tomato;
+  }
+}
+
+
+
+.logoimg {
+  position: absolute;
+  top: -6rem;
+  left: 34rem;
+
+  animation: backInUp 1s 2s;
+  animation-fill-mode: backwards;
+}
