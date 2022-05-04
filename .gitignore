@@ -23,5 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 
-#api-key
-.\src\components\contact\index.jsx
