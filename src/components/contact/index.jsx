@@ -80,16 +80,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="info-map">
-        Ansh Saxena,
-        <br />
-        India,
-        <br />
-        Paramont Symphony, <br />
-        Crossing Republik <br />
-        <br />
-        <span>anshsaxena4190@gmail.com</span>
-      </div>
+
       <div className="map-wrap">
         <MapContainer center={[28.6325348, 77.4357627]} zoom={13}>
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
