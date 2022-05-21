@@ -3,13 +3,10 @@
 $tomato: #ff5f5f;
 $black: #2c2c2c;
 
-
-@mixin animation($delay){
+@mixin animation($delay) {
   animation: backInLeft 1s $delay;
   animation-fill-mode: backwards;
 }
-
-
 
 .contact {
   color: $black;
@@ -19,16 +16,13 @@ $black: #2c2c2c;
   flex-direction: column;
   position: absolute;
   margin-top: 5rem;
-  width: 35%;
-
+  width: 35rem;
 
   animation: pulse 1s;
   animation-fill-mode: forwards;
 
-
   .h1 {
     font-size: 1.9rem;
-
 
     &::before {
       content: '<h1>';
@@ -40,7 +34,6 @@ $black: #2c2c2c;
       top: 2.8rem;
 
       @include animation(2.9s);
-
     }
 
     &::after {
@@ -53,32 +46,28 @@ $black: #2c2c2c;
       top: 4.8rem;
 
       @include animation(2.8s);
-
     }
   }
   .p {
     margin-top: -1.5rem;
 
     @include animation(2.4s);
-
   }
 }
-
 
 //---------------------------------form
 
 .form {
   margin-top: 1.5rem;
-  min-width: 100%;
-
+  width: 35rem;
+  
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-
+    
     animation: fadeInUp 1.5s 1s;
     animation-fill-mode: backwards;
-  
   }
 }
 
@@ -87,19 +76,28 @@ textarea {
   border: none;
   font-family: Helvetica, Arial, sans-serif;
   background-color: $black;
+  color: #fff;
   font-size: 0.8rem;
   padding: 0.8rem;
   margin-bottom: 0.6rem;
 }
 
-// input[type="text"],
-// input[type="email"]{
-//   min-width: 40%;
-// }
 
-.email{
+input[type='text'] {
+  min-width: 44%;
+}
+
+input[type='email'] {
   position: absolute;
-  margin-left: 17rem !important;
+  width: 242px;
+}
+
+
+
+
+.email {
+  position: absolute;
+  margin-left: 18rem !important;
   margin-top: -3.1rem !important;
 }
 
@@ -156,4 +154,10 @@ textarea {
   opacity: 0;
   animation: fadeIn 1s 2.5s;
   animation-fill-mode: forwards;
+}
+
+
+::placeholder {
+  color: #fff;
+  opacity: 0.4;
 }

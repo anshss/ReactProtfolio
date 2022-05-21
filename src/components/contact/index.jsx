@@ -53,7 +53,8 @@ const Contact = () => {
         </div>
         <div className="p">
           <p>
-            I am interested in freelance opportunities - especially ambitious or
+          Let's talk below ッ 
+          I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
           </p>
@@ -82,7 +83,7 @@ const Contact = () => {
 
 
       <div className="map-wrap">
-        <MapContainer center={[28.6325348, 77.4357627]} zoom={13}>
+        <MapContainer center={[28.6325348, 77.4357627]} zoom={11}>
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           <Marker position={[28.6325348, 77.4357627]}>
             <Popup>Ansh lives here, come over for a cup of coffee :)</Popup>
